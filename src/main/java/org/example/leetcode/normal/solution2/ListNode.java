@@ -1,4 +1,4 @@
-package org.example.leetcode.esay.solution21;
+package org.example.leetcode.normal.solution2;
 
 /**
  * @author lifei
