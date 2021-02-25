@@ -3,5 +3,5 @@ package org.example.leetcode;
 /**
  * @author lifei
  */
-public class Solution {
+public class Solution1 {
 }
