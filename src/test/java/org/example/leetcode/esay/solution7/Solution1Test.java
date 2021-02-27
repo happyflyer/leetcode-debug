@@ -2,7 +2,7 @@ package org.example.leetcode.esay.solution7;
 
 import org.junit.Test;
 
-public class SolutionTest {
+public class Solution1Test {
     @Test
     public void test() {
         // 2147483647

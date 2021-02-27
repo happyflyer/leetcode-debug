@@ -6,7 +6,7 @@ package org.example.leetcode.esay.solution9;
  *
  * @author lifei
  */
-class Solution {
+class Solution1 {
     public boolean isPalindrome(int x) {
         // 针对示例2和示例4，x<0时直接返回false
         // 针对示例3，最后一位为0时（0除外），直接返回false

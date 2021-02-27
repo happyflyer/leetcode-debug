@@ -11,7 +11,7 @@ import java.util.Map;
  *
  * @author lifei
  */
-class Solution {
+class Solution1 {
     public boolean isValid(String s) {
         int n = s.length();
         if (n % 2 == 1) {

@@ -6,7 +6,7 @@ package org.example.leetcode.normal.solution2;
  *
  * @author lifei
  */
-class Solution {
+class Solution1 {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         int carry = 0;
         ListNode head = new ListNode();

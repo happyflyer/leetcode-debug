@@ -6,7 +6,7 @@ package org.example.leetcode.esay.solution13;
  *
  * @author lifei
  */
-class Solution {
+class Solution1 {
     public int romanToInt(String s) {
         // I
         // II

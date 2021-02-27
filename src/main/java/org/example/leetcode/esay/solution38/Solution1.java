@@ -6,7 +6,7 @@ package org.example.leetcode.esay.solution38;
  *
  * @author lifei
  */
-class Solution {
+class Solution1 {
     public String countAndSay(int n) {
         if (n == 1) {
             return "1";

@@ -2,10 +2,10 @@ package org.example.leetcode.esay.solution38;
 
 import org.junit.Test;
 
-public class SolutionTest {
+public class Solution1Test {
     @Test
     public void test() {
-        Solution solution = new Solution();
+        Solution1 solution = new Solution1();
         System.out.println(solution.countAndSay(1));
         System.out.println(solution.countAndSay(2));
         System.out.println(solution.countAndSay(3));

@@ -6,7 +6,7 @@ package org.example.leetcode.esay.solution27;
  *
  * @author lifei
  */
-public class Solution {
+public class Solution1 {
     public int removeElement(int[] nums, int val) {
         if (nums == null || nums.length == 0) {
             return 0;

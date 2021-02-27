@@ -6,7 +6,7 @@ package org.example.leetcode.esay.solution7;
  *
  * @author lifei
  */
-class Solution {
+class Solution1 {
     public int reverse(int x) {
         // pop operation:
         // pop = x % 10;

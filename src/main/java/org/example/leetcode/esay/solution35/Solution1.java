@@ -6,7 +6,7 @@ package org.example.leetcode.esay.solution35;
  *
  * @author lifei
  */
-class Solution {
+class Solution1 {
     public int searchInsert(int[] nums, int target) {
         // 二分查找
         int n = nums.length;

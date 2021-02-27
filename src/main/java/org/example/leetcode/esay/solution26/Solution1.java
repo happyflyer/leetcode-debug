@@ -6,7 +6,7 @@ package org.example.leetcode.esay.solution26;
  *
  * @author lifei
  */
-class Solution {
+class Solution1 {
     public int removeDuplicates(int[] nums) {
         if (nums == null || nums.length == 0) {
             return 0;
