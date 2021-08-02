@@ -6,6 +6,9 @@ package org.example.leetcode.jianzhi.tree;
  * @author lifei
  */
 public class Jz18 {
+    /**
+     * 递归
+     */
     public TreeNode Mirror(TreeNode pRoot) {
         if (pRoot == null) {
             return null;

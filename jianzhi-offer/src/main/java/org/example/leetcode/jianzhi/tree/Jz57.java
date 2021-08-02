@@ -12,17 +12,19 @@ public class Jz57 {
      * 分情况讨论
      */
     public TreeLinkNode GetNext(TreeLinkNode pNode) {
-        // 如果当前节点有右子树，返回右子树中序排列的第一个
+        // 如果当前节点有右子树，返回右子树中的最左节点
         if (pNode.right != null) {
-            // 找到右子树的根节点，一直向下找左子树
             TreeLinkNode cur = pNode.right;
             while (cur.left != null) {
                 cur = cur.left;
             }
             return cur;
         }
-        // 当前节点没有右子树，且没有父节点
-        TreeLinkNode root = getRoot(pNode);
+        // 当前节点没有右子树，那就找根节点
+        TreeLinkNode root = pNode;
+        while (root.next != null) {
+            root = root.next;
+        }
         if (pNode == root) {
             return null;
         }
@@ -44,16 +46,6 @@ public class Jz57 {
             return pNode.next;
         }
         return null;
-    }
-
-    /**
-     * 获取根节点
-     */
-    private TreeLinkNode getRoot(TreeLinkNode pNode) {
-        while (pNode.next != null) {
-            pNode = pNode.next;
-        }
-        return pNode;
     }
 
     /**
@@ -127,7 +119,7 @@ public class Jz57 {
                         new Jz57().getInOrder(node8)
                 )
         );
-        TreeLinkNode ans = new Jz57().GetNext2(node7);
+        TreeLinkNode ans = new Jz57().GetNext2(node8);
         System.out.println(
                 ans != null ? ans.val : null
         );

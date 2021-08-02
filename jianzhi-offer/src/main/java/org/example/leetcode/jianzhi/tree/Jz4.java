@@ -12,47 +12,30 @@ public class Jz4 {
      * 递归
      */
     public TreeNode reConstructBinaryTree(int[] pre, int[] in) {
-        System.out.println(Arrays.toString(pre) + "   " + Arrays.toString(in));
-        if (pre.length == 0) {
+        int n = pre.length;
+        if (n == 0) {
             return null;
         } else {
             TreeNode root = new TreeNode(pre[0]);
-            if (pre.length == 1) {
+            if (n == 1) {
                 return root;
             }
-            int n = pre.length;
-            int pos = indexOf(in, pre[0]);
+            int pos = -1;
+            for (int i = 0; i < n; i++) {
+                if (pre[0] == in[i]) {
+                    pos = i;
+                }
+            }
             root.left = reConstructBinaryTree(
-                    copy(pre, 1, pos),
-                    copy(in, 0, pos)
+                    Arrays.copyOfRange(pre, 1, pos + 1),
+                    Arrays.copyOfRange(in, 0, pos)
             );
             root.right = reConstructBinaryTree(
-                    copy(pre, 1 + pos, n - pos - 1),
-                    copy(in, pos + 1, n - pos - 1)
+                    Arrays.copyOfRange(pre, pos + 1, n),
+                    Arrays.copyOfRange(in, pos + 1, n)
             );
             return root;
         }
-    }
-
-    /**
-     * 找下标
-     */
-    private int indexOf(int[] nums, int target) {
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] == target) {
-                return i;
-            }
-        }
-        return -1;
-    }
-
-    /**
-     * 拷贝数组切片
-     */
-    private int[] copy(int[] nums, int startIndex, int length) {
-        int[] ans = new int[length];
-        System.arraycopy(nums, startIndex, ans, 0, length);
-        return ans;
     }
 
     public static void main(String[] args) {
