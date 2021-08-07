@@ -1,4 +1,4 @@
-package org.example.leetcode.lang.thread.sync.version1;
+package org.example.leetcode.lang.thread.sync.v1;
 
 /**
  * @author lifei
