@@ -9,16 +9,16 @@
   <packaging>pom</packaging>
   <version>0.1.0</version>
   <modules>
+    <module>cyc-jianzhi</module>
+    <module>java-juc</module>
     <module>java-lang</module>
+    <module>java-thread</module>
     <module>leetcode-easy</module>
     <module>leetcode-normal</module>
     <module>leetcode-hard</module>
-    <module>jianzhi-offer</module>
-    <module>written_exam</module>
-    <module>java-juc</module>
     <module>online-judge</module>
-    <module>java-thread</module>
     <module>sort-algorithm</module>
+    <module>written_exam</module>
   </modules>
 
   <properties>

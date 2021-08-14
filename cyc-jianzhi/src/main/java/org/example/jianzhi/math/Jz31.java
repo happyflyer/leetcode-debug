@@ -40,7 +40,7 @@ public class Jz31 {
 
     public static void main(String[] args) {
         System.out.println(
-                new Jz31().NumberOf1Between1AndN_Solution2(13)
+                new Jz31().NumberOf1Between1AndN_Solution2(123)
         );
     }
 }
