@@ -1,4 +1,4 @@
-package org.example.exam.meituan;
+package org.example.exam.meituan1;
 
 /**
  * 求数列的和，
