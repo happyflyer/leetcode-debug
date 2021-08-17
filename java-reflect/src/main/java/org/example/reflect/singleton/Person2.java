@@ -1,4 +1,4 @@
-package org.example.lang.singleton;
+package org.example.reflect.singleton;
 
 /**
  * @author lifei
