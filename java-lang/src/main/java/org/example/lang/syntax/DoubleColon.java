@@ -6,23 +6,6 @@ import java.util.function.Function;
 
 /**
  * https://zhuanlan.zhihu.com/p/266804576
- * <p>
- * 双冒号运算操作符是类方法的句柄，
- * lambda表达式的一种简写，这种简写的学名叫eta-conversion或者叫η-conversion。
- * <p>
- * 英文格式双冒号::，读：double colon，
- * 双冒号（::）运算符在 Java 8 中被用作方法引用（method reference），
- * 方法引用是与 lambda 表达式相关的一个重要特性。
- * 它提供了一种执行方法的方法，
- * 为此，方法引用需要由兼容的函数式接口组成的目标类型上下文。
- * <p>
- * 双冒号(::)使用场景一般有如下6种：
- * 引用静态方法，类名::静态方法名，Integer::parseInt
- * 引用特定对象实例方法，对象名::实例方法名，System.out::println
- * 引用特定类型的任意对象的实例方法，特定类型::示例方法名，String::compareToIgnoreCase
- * 引用超类（父类）实例方法，super::方法名
- * 引用类构造方法，类名::new，ArrayList::new
- * 引用数组构造方法，数组类型[]::new，String[]::new
  *
  * @author lifei
  */
