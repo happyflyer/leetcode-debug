@@ -20,6 +20,7 @@
     <module>online-judge</module>
     <module>sort-algorithm</module>
     <module>written_exam</module>
+    <module>leetcode-hot100</module>
   </modules>
 
   <properties>
