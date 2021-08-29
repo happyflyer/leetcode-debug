@@ -1,9 +1,10 @@
-package org.example.leetcode.hot100;
+package org.example.leetcode.hot100.linkedlist;
 
 import java.util.Arrays;
 
 /**
  * https://leetcode-cn.com/problems/add-two-numbers/
+ * 链表
  *
  * @author lifei
  */

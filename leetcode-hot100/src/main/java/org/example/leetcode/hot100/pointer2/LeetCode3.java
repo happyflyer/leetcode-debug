@@ -1,4 +1,4 @@
-package org.example.leetcode.hot100;
+package org.example.leetcode.hot100.pointer2;
 
 import java.util.HashMap;
 
@@ -8,6 +8,9 @@ import java.util.HashMap;
  * @author lifei
  */
 public class LeetCode3 {
+    /**
+     * 字符串，双指针
+     */
     public int lengthOfLongestSubstring(String s) {
         int n = s.length();
         HashMap<Character, Integer> map = new HashMap<>(n);

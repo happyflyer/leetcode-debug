@@ -1,4 +1,4 @@
-package org.example.leetcode.hot100;
+package org.example.leetcode.hot100.hash;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -9,6 +9,9 @@ import java.util.HashMap;
  * @author lifei
  */
 public class LeetCode1 {
+    /**
+     * 数组，哈希表
+     */
     public int[] twoSum(int[] nums, int target) {
         int n = nums.length;
         HashMap<Integer, Integer> map = new HashMap<>(n);

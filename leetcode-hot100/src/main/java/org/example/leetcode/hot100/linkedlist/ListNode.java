@@ -1,4 +1,4 @@
-package org.example.leetcode.hot100;
+package org.example.leetcode.hot100.linkedlist;
 
 import java.util.ArrayList;
 import java.util.Arrays;

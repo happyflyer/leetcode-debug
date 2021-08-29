@@ -1,13 +1,14 @@
-package org.example.leetcode.hot100;
+package org.example.leetcode.hot100.binary;
 
 /**
  * https://leetcode-cn.com/problems/median-of-two-sorted-arrays/
+ * 数组，二分查找，有点难
  *
  * @author lifei
  */
 public class LeetCode4 {
     /**
-     * 复杂度为O（m+n）
+     * 合并数组，复杂度为O（m+n）
      */
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int m = nums1.length;
