@@ -1,4 +1,4 @@
-package org.example.exam.pdd;
+package org.example.exam.pdd1;
 
 import java.util.Arrays;
 import java.util.Scanner;
