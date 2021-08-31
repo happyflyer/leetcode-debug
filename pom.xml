@@ -14,13 +14,9 @@
     <module>java-lang</module>
     <module>java-reflect</module>
     <module>java-thread</module>
-    <module>leetcode-easy</module>
-    <module>leetcode-normal</module>
-    <module>leetcode-hard</module>
     <module>online-judge</module>
     <module>sort-algorithm</module>
     <module>written_exam</module>
-    <module>leetcode-hot100</module>
   </modules>
 
   <properties>
