@@ -13,7 +13,7 @@ public class Solution19 {
     /**
      * 双指针
      */
-    public ListNode removeNthFromEnd3(ListNode head, int n) {
+    public ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode newHead = new ListNode(-1);
         newHead.next = head;
         int len = 0;
@@ -37,7 +37,7 @@ public class Solution19 {
         System.out.println(
                 Arrays.toString(
                         ListNode.toArray(
-                                new Solution19().removeNthFromEnd3(head, 2)
+                                new Solution19().removeNthFromEnd(head, 2)
                         )
                 )
         );
