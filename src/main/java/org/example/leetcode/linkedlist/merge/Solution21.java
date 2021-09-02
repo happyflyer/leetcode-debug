@@ -1,4 +1,6 @@
-package org.example.leetcode.linkedlist;
+package org.example.leetcode.linkedlist.merge;
+
+import org.example.leetcode.linkedlist.ListNode;
 
 import java.util.Arrays;
 
@@ -11,7 +13,7 @@ import java.util.Arrays;
  */
 public class Solution21 {
     /**
-     * 归并，递归。
+     * 递归
      */
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         if (l1 == null) {
@@ -28,7 +30,7 @@ public class Solution21 {
     }
 
     /**
-     * 归并，迭代。
+     * 迭代
      */
     public ListNode mergeTwoLists2(ListNode l1, ListNode l2) {
         ListNode head = new ListNode(-1);
@@ -53,7 +55,8 @@ public class Solution21 {
         System.out.println(
                 Arrays.toString(
                         ListNode.toArray(
-                                new Solution21().mergeTwoLists(l1, l2)
+                                // new Solution21().mergeTwoLists(l1, l2)
+                                new Solution21().mergeTwoLists2(l1, l2)
                         )
                 )
         );

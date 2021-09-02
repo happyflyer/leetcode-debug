@@ -11,7 +11,7 @@ import java.util.Arrays;
  */
 public class Solution19 {
     /**
-     * 前后指针。
+     * 双指针
      */
     public ListNode removeNthFromEnd3(ListNode head, int n) {
         ListNode newHead = new ListNode(-1);

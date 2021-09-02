@@ -11,7 +11,7 @@ import java.util.Arrays;
  */
 public class Solution24 {
     /**
-     * 递归。
+     * 递归
      */
     public ListNode swapPairs(ListNode head) {
         if (head == null || head.next == null) {
@@ -24,7 +24,7 @@ public class Solution24 {
     }
 
     /**
-     * 迭代。
+     * 迭代
      */
     public ListNode swapPairs2(ListNode head) {
         if (head == null || head.next == null) {
