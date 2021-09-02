@@ -1,7 +1,6 @@
 package org.example.leetcode.linkedlist.palindrome;
 
 import org.example.leetcode.linkedlist.ListNode;
-import org.example.leetcode.tree.TreeNode;
 
 /**
  * https://leetcode-cn.com/problems/palindrome-linked-list/
@@ -12,45 +11,6 @@ import org.example.leetcode.tree.TreeNode;
  */
 public class Solution234 {
     /**
-     * 回文字符串
-     */
-    public String palindrome(String s, int left, int right) {
-        while (left > 0 && right < s.length()
-                && s.charAt(left) == s.charAt(right)) {
-            left--;
-            right++;
-        }
-        return s.substring(left, right + 1);
-    }
-
-    /**
-     * 判断回文字符串
-     */
-    public boolean isPalindrome(String s) {
-        int left = 0;
-        int right = s.length() - 1;
-        while (left < right) {
-            if (s.charAt(left) != s.charAt(right)) {
-                return false;
-            }
-            left++;
-            right--;
-        }
-        return true;
-    }
-
-    /**
-     * 二叉树遍历的递归结构
-     */
-    public void traverse(TreeNode root) {
-        // 前序遍历代码
-        traverse(root.left);
-        // 中序遍历代码
-        traverse(root.right);
-        // 后序遍历代码
-    }
-
-    /**
      * 链表遍历的递归结构
      */
     public void traverse(ListNode head) {
@@ -60,7 +20,7 @@ public class Solution234 {
     }
 
     /**
-     * 回文链表
+     * 递归
      */
     public boolean isPalindrome(ListNode head) {
         left = head;
@@ -80,7 +40,7 @@ public class Solution234 {
     }
 
     /**
-     * 回文链表
+     * 翻转链表
      */
     public boolean isPalindrome2(ListNode head) {
         // 1、通过快慢指针找到中点。
@@ -106,9 +66,6 @@ public class Solution234 {
         return true;
     }
 
-    /**
-     * 反转链表
-     */
     public ListNode reverse(ListNode head) {
         ListNode prev = null;
         ListNode cur = head;

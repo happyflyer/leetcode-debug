@@ -13,7 +13,7 @@ import java.util.Arrays;
  */
 public class Solution25 {
     /**
-     * 反转整个链表
+     * 翻转整个链表
      */
     public ListNode reverse(ListNode head) {
         ListNode prev = null;
@@ -28,7 +28,7 @@ public class Solution25 {
     }
 
     /**
-     * 反转部分链表
+     * 翻转部分链表
      */
     public ListNode reverse(ListNode a, ListNode b) {
         ListNode prev = null;
@@ -44,7 +44,7 @@ public class Solution25 {
     }
 
     /**
-     * K个一组翻转链表
+     * K 个一组翻转链表
      */
     public ListNode reverseKGroup(ListNode head, int k) {
         if (head == null) {

@@ -13,7 +13,7 @@ import java.util.Arrays;
  */
 public class Solution92 {
     /**
-     * 反转整个链表
+     * 翻转整个链表
      */
     public ListNode reverse(ListNode head) {
         if (head.next == null) {
@@ -26,7 +26,7 @@ public class Solution92 {
     }
 
     /**
-     * 反转链表前N个节点
+     * 翻转链表前N个节点
      */
     public ListNode reverseN(ListNode head, int n) {
         if (n == 1) {
@@ -42,7 +42,7 @@ public class Solution92 {
     ListNode successor = null;
 
     /**
-     * 反转链表的一部分
+     * 翻转链表的一部分
      */
     public ListNode reverseBetween(ListNode head, int m, int n) {
         if (m == 1) {
