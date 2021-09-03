@@ -11,36 +11,27 @@ import org.example.leetcode.linkedlist.ListNode;
  */
 public class Solution234 {
     /**
-     * 链表遍历的递归结构
-     */
-    public void traverse(ListNode head) {
-        // 前序遍历代码
-        traverse(head.next);
-        // 后续遍历代码
-    }
-
-    /**
      * 递归
      */
     public boolean isPalindrome(ListNode head) {
         left = head;
-        return traverse2(head);
+        return traverse(head);
     }
 
     ListNode left;
 
-    public boolean traverse2(ListNode right) {
+    public boolean traverse(ListNode right) {
         if (right == null) {
             return true;
         }
-        boolean res = traverse2(right.next);
+        boolean res = traverse(right.next);
         res = res && (right.val == left.val);
         left = left.next;
         return res;
     }
 
     /**
-     * 翻转链表
+     * 翻转链表后半部分
      */
     public boolean isPalindrome2(ListNode head) {
         // 1、通过快慢指针找到中点。
@@ -50,6 +41,7 @@ public class Solution234 {
             slow = slow.next;
             fast = fast.next.next;
         }
+        // 奇数情况
         if (fast != null) {
             slow = slow.next;
         }

@@ -10,17 +10,6 @@ import org.example.leetcode.tree.TreeNode;
  * @author lifei
  */
 public class Solution226 {
-    /**
-     * 二叉树遍历的递归结构
-     */
-    public void traverse(TreeNode root) {
-        // 前序遍历
-        traverse(root.left);
-        // 中序遍历
-        traverse(root.left);
-        // 后续遍历
-    }
-
     public TreeNode invertTree(TreeNode root) {
         if (root == null) {
             return null;
