@@ -1,4 +1,4 @@
-package org.example.exam.tencent;
+package org.example.exam.tencent1;
 
 import java.util.Scanner;
 

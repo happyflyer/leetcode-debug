@@ -1,4 +1,4 @@
-package org.example.exam.tencent;
+package org.example.exam.tencent1;
 
 /**
  * 输入：5,{0,1,3,4,5,11,6}
