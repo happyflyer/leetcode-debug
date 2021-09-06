@@ -1,4 +1,4 @@
-package org.example.exam.shopee;
+package org.example.exam.shopee1;
 
 /**
  * 机器人漫步

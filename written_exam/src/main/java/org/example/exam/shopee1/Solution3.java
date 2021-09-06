@@ -1,4 +1,4 @@
-package org.example.exam.shopee;
+package org.example.exam.shopee1;
 
 /**
  * 压缩字符串，
