@@ -1,4 +1,4 @@
-package org.example.exam.huawei;
+package org.example.exam.huawei1;
 
 import java.util.Scanner;
 
