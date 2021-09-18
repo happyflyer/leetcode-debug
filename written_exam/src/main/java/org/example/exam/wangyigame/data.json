@@ -1,0 +1,16 @@
+{
+  "itemBuy": [
+    {
+      "roleName": "xiaolin",
+      "level": 69,
+      "roleId": 10000009,
+      "items": [
+        {
+          "itemId": 1001,
+          "num": 10,
+          "cash": 100
+        }
+      ]
+    }
+  ]
+}
