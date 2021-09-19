@@ -1,8 +1,7 @@
 package org.example.algo.linkedlist.reverse;
 
 import org.example.algo.linkedlist.ListNode;
-
-import java.util.Arrays;
+import org.example.algo.linkedlist.ListNodeUtils;
 
 /**
  * https://leetcode-cn.com/problems/reverse-linked-list-ii/
@@ -53,15 +52,8 @@ public class Solution92 {
     }
 
     public static void main(String[] args) {
-        ListNode head = ListNode.parseArray(new int[]{1, 2, 3, 4, 5});
-        System.out.println(
-                Arrays.toString(
-                        ListNode.toArray(
-                                // new Solution92().reverse(head)
-                                // new Solution92().reverseN(head, 3)
-                                new Solution92().reverseBetween(head, 2, 4)
-                        )
-                )
-        );
+        ListNode head = ListNodeUtils.parseArray(new int[]{1, 2, 3, 4, 5});
+        ListNode ans = new Solution92().reverseBetween(head, 2, 4);
+        System.out.println(ListNodeUtils.toList(ans));
     }
 }

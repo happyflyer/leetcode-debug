@@ -1,6 +1,7 @@
 package org.example.algo.linkedlist.palindrome;
 
 import org.example.algo.linkedlist.ListNode;
+import org.example.algo.linkedlist.ListNodeUtils;
 
 /**
  * https://leetcode-cn.com/problems/palindrome-linked-list/
@@ -71,10 +72,8 @@ public class Solution234 {
     }
 
     public static void main(String[] args) {
-        ListNode head = ListNode.parseArray(new int[]{1, 2, 3, 2, 1});
-        System.out.println(
-                // new Solution234().isPalindrome(head)
-                new Solution234().isPalindrome2(head)
-        );
+        ListNode head = ListNodeUtils.parseArray(new int[]{1, 2, 3, 2, 1});
+        boolean ans = new Solution234().isPalindrome2(head);
+        System.out.println(ans);
     }
 }

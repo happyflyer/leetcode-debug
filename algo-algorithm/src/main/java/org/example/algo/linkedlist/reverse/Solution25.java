@@ -1,8 +1,7 @@
 package org.example.algo.linkedlist.reverse;
 
 import org.example.algo.linkedlist.ListNode;
-
-import java.util.Arrays;
+import org.example.algo.linkedlist.ListNodeUtils;
 
 /**
  * https://leetcode-cn.com/problems/reverse-nodes-in-k-group/
@@ -64,17 +63,10 @@ public class Solution25 {
     }
 
     public static void main(String[] args) {
-        ListNode head = ListNode.parseArray(new int[]{1, 2, 3, 4, 5});
-        ListNode a = ListNode.find(head, 2);
-        ListNode b = ListNode.find(head, 4);
-        System.out.println(
-                Arrays.toString(
-                        ListNode.toArray(
-                                // new Solution25().reverse(head)
-                                // new Solution25().reverse(a, b)
-                                new Solution25().reverseKGroup(head, 3)
-                        )
-                )
-        );
+        ListNode head = ListNodeUtils.parseArray(new int[]{1, 2, 3, 4, 5});
+        // ListNode a = ListNodeUtils.find(head, 2);
+        // ListNode b = ListNodeUtils.find(head, 4);
+        ListNode ans = new Solution25().reverseKGroup(head, 3);
+        System.out.println(ListNodeUtils.toList(ans));
     }
 }

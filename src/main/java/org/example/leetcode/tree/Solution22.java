@@ -84,8 +84,7 @@ public class Solution22 {
     }
 
     public static void main(String[] args) {
-        System.out.println(
-                new Solution22().generateParenthesis(3)
-        );
+        List<String> ans = new Solution22().generateParenthesis(4);
+        System.out.println(ans);
     }
 }

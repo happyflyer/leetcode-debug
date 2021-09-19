@@ -1,7 +1,5 @@
 package org.example.leetcode.linkedlist;
 
-import java.util.Arrays;
-
 /**
  * https://leetcode-cn.com/problems/swap-nodes-in-pairs/
  * <p>
@@ -30,7 +28,8 @@ public class Solution24 {
         if (head == null || head.next == null) {
             return head;
         }
-        ListNode newHead = new ListNode(0, head);
+        ListNode newHead = new ListNode(0);
+        newHead.next = head;
         ListNode cur = newHead;
         ListNode node1;
         ListNode node2;
@@ -46,13 +45,8 @@ public class Solution24 {
     }
 
     public static void main(String[] args) {
-        ListNode head = ListNode.parseArray(new int[]{1, 2, 3, 4, 5, 6, 7});
-        System.out.println(
-                Arrays.toString(
-                        ListNode.toArray(
-                                new Solution24().swapPairs(head)
-                        )
-                )
-        );
+        ListNode head = ListNodeUtils.parseArray(new int[]{1, 2, 3, 4, 5, 6, 7});
+        ListNode ans = new Solution24().swapPairs(head);
+        System.out.println(ListNodeUtils.toList(ans));
     }
 }

@@ -1,8 +1,7 @@
 package org.example.leetcode.linkedlist.merge;
 
 import org.example.leetcode.linkedlist.ListNode;
-
-import java.util.Arrays;
+import org.example.leetcode.linkedlist.ListNodeUtils;
 
 /**
  * https://leetcode-cn.com/problems/merge-two-sorted-lists/
@@ -50,15 +49,9 @@ public class Solution21 {
     }
 
     public static void main(String[] args) {
-        ListNode l1 = ListNode.parseArray(new int[]{1, 2, 4});
-        ListNode l2 = ListNode.parseArray(new int[]{1, 3, 4});
-        System.out.println(
-                Arrays.toString(
-                        ListNode.toArray(
-                                // new Solution21().mergeTwoLists(l1, l2)
-                                new Solution21().mergeTwoLists2(l1, l2)
-                        )
-                )
-        );
+        ListNode l1 = ListNodeUtils.parseArray(new int[]{1, 2, 4});
+        ListNode l2 = ListNodeUtils.parseArray(new int[]{1, 3, 4});
+        ListNode ans = new Solution21().mergeTwoLists2(l1, l2);
+        System.out.println(ListNodeUtils.toList(ans));
     }
 }

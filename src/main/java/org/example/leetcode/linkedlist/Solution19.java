@@ -1,7 +1,5 @@
 package org.example.leetcode.linkedlist;
 
-import java.util.Arrays;
-
 /**
  * https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/
  * <p>
@@ -33,13 +31,8 @@ public class Solution19 {
     }
 
     public static void main(String[] args) {
-        ListNode head = ListNode.parseArray(new int[]{1, 2, 3, 4, 5});
-        System.out.println(
-                Arrays.toString(
-                        ListNode.toArray(
-                                new Solution19().removeNthFromEnd(head, 2)
-                        )
-                )
-        );
+        ListNode head = ListNodeUtils.parseArray(new int[]{1, 2, 3, 4, 5});
+        ListNode ans = new Solution19().removeNthFromEnd(head, 2);
+        System.out.println(ListNodeUtils.toList(ans));
     }
 }

@@ -1,8 +1,7 @@
 package org.example.leetcode.linkedlist.merge;
 
 import org.example.leetcode.linkedlist.ListNode;
-
-import java.util.Arrays;
+import org.example.leetcode.linkedlist.ListNodeUtils;
 
 /**
  * https://leetcode-cn.com/problems/add-two-numbers/
@@ -44,14 +43,9 @@ public class Solution2 {
     }
 
     public static void main(String[] args) {
-        ListNode l1 = ListNode.parseArray(new int[]{9, 9, 9, 9, 9, 9, 9});
-        ListNode l2 = ListNode.parseArray(new int[]{9, 9, 9, 9});
-        System.out.println(
-                Arrays.toString(
-                        ListNode.toArray(
-                                new Solution2().addTwoNumbers(l1, l2)
-                        )
-                )
-        );
+        ListNode l1 = ListNodeUtils.parseArray(new int[]{9, 9, 9, 9, 9, 9, 9});
+        ListNode l2 = ListNodeUtils.parseArray(new int[]{9, 9, 9, 9});
+        ListNode ans = new Solution2().addTwoNumbers(l1, l2);
+        System.out.println(ListNodeUtils.toList(ans));
     }
 }
