@@ -1,4 +1,4 @@
-package org.example.algo.cache.lru;
+package org.example.algo.custom.lru;
 
 /**
  * @author lifei

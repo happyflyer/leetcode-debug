@@ -12,7 +12,7 @@ import org.example.algo.linkedlist.ListNodeUtils;
  */
 public class Solution25 {
     /**
-     * 翻转整个链表
+     * 反转整个链表（迭代）
      */
     public ListNode reverse(ListNode head) {
         ListNode prev = null;
@@ -27,7 +27,7 @@ public class Solution25 {
     }
 
     /**
-     * 翻转部分链表
+     * 反转部分链表（迭代）
      */
     public ListNode reverse(ListNode a, ListNode b) {
         ListNode prev = null;
@@ -43,7 +43,7 @@ public class Solution25 {
     }
 
     /**
-     * K 个一组翻转链表
+     * K 个一组反转链表（迭代）
      */
     public ListNode reverseKGroup(ListNode head, int k) {
         if (head == null) {

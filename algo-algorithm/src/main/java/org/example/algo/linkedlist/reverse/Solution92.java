@@ -12,7 +12,7 @@ import org.example.algo.linkedlist.ListNodeUtils;
  */
 public class Solution92 {
     /**
-     * 翻转整个链表
+     * 反转整个链表（递归）
      */
     public ListNode reverse(ListNode head) {
         if (head.next == null) {
@@ -25,7 +25,7 @@ public class Solution92 {
     }
 
     /**
-     * 翻转链表前N个节点
+     * 反转链表前N个节点（递归）
      */
     public ListNode reverseN(ListNode head, int n) {
         if (n == 1) {
@@ -41,7 +41,7 @@ public class Solution92 {
     ListNode successor = null;
 
     /**
-     * 翻转链表的一部分
+     * 反转链表的一部分（递归）
      */
     public ListNode reverseBetween(ListNode head, int m, int n) {
         if (m == 1) {

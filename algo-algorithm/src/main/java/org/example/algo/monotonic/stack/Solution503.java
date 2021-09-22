@@ -1,4 +1,4 @@
-package org.example.algo.stack;
+package org.example.algo.monotonic.stack;
 
 import java.util.Arrays;
 import java.util.Deque;

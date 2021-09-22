@@ -1,4 +1,4 @@
-package org.example.algo.cache;
+package org.example.algo.custom.table;
 
 import java.util.LinkedHashMap;
 

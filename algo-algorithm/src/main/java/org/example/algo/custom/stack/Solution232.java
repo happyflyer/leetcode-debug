@@ -1,4 +1,4 @@
-package org.example.algo.custom;
+package org.example.algo.custom.stack;
 
 import java.util.Deque;
 import java.util.LinkedList;

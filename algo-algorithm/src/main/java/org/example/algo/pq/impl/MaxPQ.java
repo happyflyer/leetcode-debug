@@ -1,4 +1,4 @@
-package org.example.algo.heap.impl;
+package org.example.algo.pq.impl;
 
 /**
  * @author lifei

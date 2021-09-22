@@ -1,4 +1,4 @@
-package org.example.algo.queue;
+package org.example.algo.monotonic.queue;
 
 import java.util.Arrays;
 import java.util.Deque;

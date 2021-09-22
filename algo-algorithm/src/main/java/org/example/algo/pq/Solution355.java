@@ -1,4 +1,4 @@
-package org.example.algo.heap;
+package org.example.algo.pq;
 
 import java.util.*;
 
