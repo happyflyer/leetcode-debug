@@ -1,4 +1,4 @@
-package org.example.algo.array.binarysearch;
+package org.example.algo.binarysearch;
 
 /**
  * https://leetcode-cn.com/problems/capacity-to-ship-packages-within-d-days/

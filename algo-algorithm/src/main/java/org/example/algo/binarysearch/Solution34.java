@@ -1,4 +1,4 @@
-package org.example.algo.array.binarysearch;
+package org.example.algo.binarysearch;
 
 import java.util.Arrays;
 

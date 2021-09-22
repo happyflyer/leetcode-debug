@@ -1,4 +1,4 @@
-package org.example.algo.array.binarysearch;
+package org.example.algo.binarysearch;
 
 /**
  * https://leetcode-cn.com/problems/koko-eating-bananas/
